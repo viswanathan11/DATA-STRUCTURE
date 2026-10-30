@@ -15,7 +15,6 @@ class TreeNode{
 
 public class BuildingBinaryTreeFromPreOrder{
 static Scanner sc=new Scanner(System.in);
-
 static public TreeNode buildTreePreOrder(){
     int val=sc.nextInt();
     TreeNode root=new TreeNode(val);
@@ -28,7 +27,6 @@ static public TreeNode buildTreePreOrder(){
     }
     return root;
 }
-
 static int countManager(TreeNode root){
     if(root==null){
         return 0;
@@ -37,7 +35,6 @@ static int countManager(TreeNode root){
     if(root.left!=null||root.right!=null){
         count=1;
     }
-
     return count+countManager(root.left)+countManager(root.right);
 }
 public static void main(String[] args) {

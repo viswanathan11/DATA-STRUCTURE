@@ -32,7 +32,6 @@ public class BoundaryTreeTraversal {
         if(root.right==null&&root.left==null){
             return;
         }
-    
          res.add(root.data);
         
          if(root.left!=null)leftTraversal(root.left, res);
